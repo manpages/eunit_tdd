@@ -1,0 +1,41 @@
+Eshell V5.8.1  (abort with ^G)
+(tdd_example@memorici.de)1>  make:all([load]).
+up_to_date
+(tdd_example@memorici.de)2> eunit:test(btree).
+eunit/src/btree_tests.erl:8: <-
+eunit/src/btree.erl:41: ([^|\-&()]+)
+eunit/src/btree.erl:42: A
+eunit/src/btree.erl:60: [{0,1}]
+
+eunit/src/btree_tests.erl:13: <-
+eunit/src/btree.erl:31: A|B&(foo bar|D)
+eunit/src/btree.erl:60: [{0,3},{3,1},{5,9}]
+
+eunit/src/btree.erl:36: A|B
+eunit/src/btree.erl:60: [{0,1},{1,1},{2,1}]
+
+eunit/src/btree.erl:41: ([^|\-&()]+)
+eunit/src/btree.erl:42: A
+eunit/src/btree.erl:60: [{0,1}]
+
+eunit/src/btree.erl:41: ([^|\-&()]+)
+eunit/src/btree.erl:42: B
+eunit/src/btree.erl:60: [{0,1}]
+
+eunit/src/btree.erl:36: foo bar|D
+eunit/src/btree.erl:60: [{0,7},{7,1},{8,1}]
+
+eunit/src/btree.erl:41: ([^|\-&()]+)
+eunit/src/btree.erl:42: foo bar
+eunit/src/btree.erl:60: [{0,7}]
+
+eunit/src/btree.erl:41: ([^|\-&()]+)
+eunit/src/btree.erl:42: D
+eunit/src/btree.erl:60: [{0,1}]
+
+eunit/src/btree_tests.erl:23: <-
+eunit/src/btree.erl:41: ([^|\-&()]+)
+eunit/src/btree.erl:42: A|
+  All 3 tests passed.
+ok
+(tdd_example@memorici.de)3>
